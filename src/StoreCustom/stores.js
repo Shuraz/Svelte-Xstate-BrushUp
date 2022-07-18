@@ -1,11 +1,13 @@
 import { writable } from "svelte/store";
-const createCount=()=>{
+// custom Stores
+// https://www.youtube.com/watch?v=9phWUxdBuSM&list=PLC3y8-rFHvwiYZOsc2D8AO1MYwLjZQrKx&index=34
+function createCount(){
     const {subscribe,set,update}=writable(0);
     return{
         subscribe,
-        increment:()=>update(n=>n+1),
-        decrement:()=>update(n=>n-1),
+        increment:(size=1)=>update((n)=>n + size),
+        decrement:(size=1)=>update((n)=>n - size),
         reset:()=>set(0) 
     }
 }
-export const count = createCount();
+export const customCount = createCount();
