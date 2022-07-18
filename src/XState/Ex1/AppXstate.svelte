@@ -14,14 +14,14 @@
 <button on:click={() => toggleService.send('TOGGLE')}>
     {current.matches('inactive') ? 'Off' : 'On'}
 </button> -->
-
 <script>
-    import {interpret} from 'xstate';
-    import {toggleMachine} from './machine';
+  import { interpret } from "xstate";
+  import { toggleMachine } from "./machine";
 
-    const toggleService = interpret(toggleMachine).start();
+  const toggleService = interpret(toggleMachine).start();
 </script>
+
 <h4>AppXstate</h4>
-<button on:click={() => toggleService.send('TOGGLE')}>
-    {$toggleService.matches('inactive') ? 'Off' : 'On'}
+<button on:click={() => toggleService.send("TOGGLE")}>
+  {$toggleService.matches("inactive") ? "Off" : "On"}
 </button>
