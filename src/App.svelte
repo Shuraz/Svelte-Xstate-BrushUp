@@ -53,7 +53,7 @@
 <!-- <SelectBinding/> -->
 <!-- <OnMount/>   -->
 <!-- <WritableStore/> -->
-<CustomStore/>
+<!-- <CustomStore/> -->
 <!-- <NamedSlot/> -->
 <!-- <AppXstate /> -->
 <!-- <AppXstate2 /> -->
@@ -63,7 +63,7 @@
 <!-- <HttpRequest/> -->
 <!-- <AutoFocusApp/> -->
 <!-- <TabApp/> -->
-<!-- <ContextModuleApp/> -->
+<ContextModuleApp/>
 <!-- <FormApp/> -->
 <!-- <ReadableStore/> -->
 <style>
